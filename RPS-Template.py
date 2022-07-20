@@ -14,7 +14,10 @@ while True:
     prediction = model.predict(data)
     cv2.imshow('frame', frame)
     # Press q to close the window
+    print("\nthis is the prediction:^")
     print(prediction)
+    print("^")
+    print(type(prediction))
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
             
